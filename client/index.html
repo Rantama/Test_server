@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+  <head>
+      <meta charset = "utf-8"></meta>
+      <title>Test</title>
+      <script src = "bower_components/angular/angular.js" charset = "utf-8"></script>
+      <script type = "text/javascript">
+        angular.module("exampleApp", [])
+        .controller("simpleCtrl", function($scope){
+          $scope.hi = "hello from simpleCtrl"
+        })
+     </script>
+
+  </head>
+  <body ng-controller="simpleCtrl">
+    {{hi}}
+  </body>
+</html>
